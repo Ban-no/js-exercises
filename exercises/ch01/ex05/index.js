@@ -1,0 +1,45 @@
+// index.js
+function abs(x) {
+  return x >= 0 ? x : -x;
+}
+
+function sum(array) {
+  return array.reduce((a, b) => a + b, 0);
+}
+
+function factorial(n) {
+  let product = 1;
+  while (n > 1) {
+    product *= n;
+    n--;
+  }
+  return product;
+}
+
+module.exports = { abs, sum, factorial };
+
+/*function abs(x){
+  if (x >= 0){
+    return x;
+  }
+  else{
+    return -x
+  }
+}
+
+function sum(array){
+  let sum = 0;
+  for(let x of array) {
+    sum += x;
+  }
+  return sum;
+}
+
+function factorial(n) {  //階乗を計算する関数
+  let product = 1;
+  while(n > 1) {
+    product *= n;
+    n--
+  }
+  return product
+}*/

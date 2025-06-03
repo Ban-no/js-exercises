@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      let life = { answer: 42 };
+      //const x = { ...life };  //番地だけでなく、中身をコピー
+      console.log({ ...life }); //こっちの方がスマート
+      life.answer = 0;
+      console.log(life);
+    </script>
+  </body>
+</html>
