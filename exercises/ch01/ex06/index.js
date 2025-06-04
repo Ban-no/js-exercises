@@ -1,5 +1,4 @@
-//export function fib(n) {
-function fib(n) {
+export function fib(n) {
   if (n === 0) return 0;
   if (n === 1) return 1;
 
@@ -12,5 +11,3 @@ function fib(n) {
   }
   return b;
 }
-
-module.exports = { fib };

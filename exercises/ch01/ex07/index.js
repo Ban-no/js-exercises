@@ -15,8 +15,7 @@ class Point {
 }
 
 // クラスをエクスポート
-//export { Point };
-module.exports = { Point };
+export { Point };
 
 /*let p1 = new Point(0, 0);
 let p2 = new Point(0, 4);

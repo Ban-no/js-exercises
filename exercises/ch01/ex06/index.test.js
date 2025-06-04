@@ -1,5 +1,4 @@
-//import { fib } from "./index.js";
-const { fib } = require("./index.js");
+import { fib } from "./index.js";
 
 describe("math", () => {
   describe("fib", () => {

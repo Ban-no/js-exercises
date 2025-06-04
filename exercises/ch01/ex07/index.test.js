@@ -1,5 +1,4 @@
-//import { Point } from "./index.js";
-const { Point } = require("./index.js");
+import { Point } from "./index.js";
 
 describe("Point Class", () => {
   //distanceのテスト

@@ -1,13 +1,20 @@
-// index.js
-function abs(x) {
-  return x >= 0 ? x : -x;
+export function abs(x) {
+  if (x >= 0) {
+    return x;
+  } else {
+    return -x;
+  }
 }
 
-function sum(array) {
-  return array.reduce((a, b) => a + b, 0);
+export function sum(array) {
+  let sum = 0;
+  for (const x of array) {
+    sum += x;
+  }
+  return sum;
 }
 
-function factorial(n) {
+export function factorial(n) {
   let product = 1;
   while (n > 1) {
     product *= n;
@@ -15,8 +22,6 @@ function factorial(n) {
   }
   return product;
 }
-
-module.exports = { abs, sum, factorial };
 
 /*function abs(x){
   if (x >= 0){
